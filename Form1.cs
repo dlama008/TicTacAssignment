@@ -110,11 +110,6 @@ namespace TicTacAssignment
                 win = true;
             }
 
-            //if no one wins
-            //if all buttons are not empty
-            //we can put 1 char in a a button "X" or "O"
-            //we have 9 buttons
-            //mean 9 char in length
             if (AllBtnLength() == 9 && win == false)
             {
                 label1.Text = "No Winner";
@@ -161,6 +156,11 @@ namespace TicTacAssignment
                     c.BackColor = Color.White;
                 }
             }
+
+        }
+
+        private void ButtonNewGame_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

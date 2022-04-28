@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ButtonNewGame = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.ButtonNewGame = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +54,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(404, 107);
             this.panel1.TabIndex = 0;
+            // 
+            // ButtonNewGame
+            // 
+            this.ButtonNewGame.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.ButtonNewGame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonNewGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.ButtonNewGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ButtonNewGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonNewGame.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ButtonNewGame.Location = new System.Drawing.Point(270, 30);
+            this.ButtonNewGame.Name = "ButtonNewGame";
+            this.ButtonNewGame.Size = new System.Drawing.Size(120, 40);
+            this.ButtonNewGame.TabIndex = 9;
+            this.ButtonNewGame.Text = "New Game";
+            this.ButtonNewGame.UseVisualStyleBackColor = false;
+            this.ButtonNewGame.Click += new System.EventHandler(this.ButtonNewGame_Click_1);
             // 
             // label1
             // 
@@ -210,21 +226,6 @@
             this.button1.Size = new System.Drawing.Size(129, 114);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // ButtonNewGame
-            // 
-            this.ButtonNewGame.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ButtonNewGame.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonNewGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ButtonNewGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ButtonNewGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonNewGame.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ButtonNewGame.Location = new System.Drawing.Point(270, 30);
-            this.ButtonNewGame.Name = "ButtonNewGame";
-            this.ButtonNewGame.Size = new System.Drawing.Size(120, 40);
-            this.ButtonNewGame.TabIndex = 9;
-            this.ButtonNewGame.Text = "New Game";
-            this.ButtonNewGame.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
