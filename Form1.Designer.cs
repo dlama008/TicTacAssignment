@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(409, 107);
             this.panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic Medium", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(13, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(262, 65);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Play now!";
             // 
             // panel2
             // 
@@ -83,9 +94,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(129, 114);
             this.button9.TabIndex = 8;
-            this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = true;
-           // this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -98,9 +107,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(129, 114);
             this.button8.TabIndex = 7;
-            this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
-            //this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -113,9 +120,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(129, 114);
             this.button7.TabIndex = 6;
-            this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
-            // this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -128,9 +133,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(129, 114);
             this.button6.TabIndex = 5;
-            this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
-            // this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -143,9 +146,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(129, 114);
             this.button5.TabIndex = 4;
-            this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
-            // this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -158,9 +159,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(129, 114);
             this.button4.TabIndex = 3;
-            this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
-            // this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -173,9 +172,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(129, 114);
             this.button3.TabIndex = 2;
-            this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
-            // this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -188,7 +185,6 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 114);
             this.button2.TabIndex = 1;
-            this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -202,20 +198,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 114);
             this.button1.TabIndex = 0;
-            this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
-            // this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic Medium", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(13, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 65);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Play now!";
             // 
             // Form1
             // 
