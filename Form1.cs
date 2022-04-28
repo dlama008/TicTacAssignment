@@ -20,7 +20,7 @@ namespace TicTacAssignment
         private void Form1_Load(object sender, EventArgs e)
         {
             //Add action to all buttons inside panel2
-            foreach(Control c in panel2.Controls)
+            foreach (Control c in panel2.Controls)
             {
                 if (c is Button)
                 {
@@ -35,29 +35,33 @@ namespace TicTacAssignment
         public void btn_click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            if (btn.Text.Equals(""))//we will clear text from buttons later
-            { }
+            if (btn.Text.Equals(""))
+            {
+
 
                 if (XorO % 2 == 0)
                 {
                     btn.Text = "X";
                     btn.ForeColor = Color.DeepSkyBlue;
-                label1.Text = "O turn now";
+                    label1.Text = "O turn now";
+                    GetTheWinner();
                 }
                 else
                 {
                     btn.Text = "O";
                     btn.ForeColor = Color.OrangeRed;
-                label1.Text = "X turn now";
-            }
+                    label1.Text = "X turn now";
+                    GetTheWinner();
+                }
 
                 XorO++;
             }
+        }
 
         bool win = false;
         public void GetTheWinner()
         {
-            if(!button1.Text.Equals("") && button1.Text.Equals
+            if (!button1.Text.Equals("") && button1.Text.Equals
                 (button2.Text) && button1.Text.Equals(button3.Text))
             {
                 WinEffect(button1, button2, button3);
@@ -94,9 +98,9 @@ namespace TicTacAssignment
                 win = true;
             }
             if (!button1.Text.Equals("") && button1.Text.Equals
-              (button5.Text) && button1.Text.Equals(button7.Text))
+              (button5.Text) && button1.Text.Equals(button9.Text))
             {
-                WinEffect(button1, button5, button7);
+                WinEffect(button1, button5, button9);
                 win = true;
             }
             if (!button3.Text.Equals("") && button3.Text.Equals
@@ -106,6 +110,28 @@ namespace TicTacAssignment
                 win = true;
             }
 
+            //if no one wins
+            //if all buttons are not empty
+            //we can put 1 char in a a button "X" or "O"
+            //we have 9 buttons
+            //mean 9 char in length
+            if (AllBtnLength() == 9 && win == false)
+            {
+                label1.Text = "No Winner";
+            }
+        }
+
+        public int AllBtnLength()
+        {
+            int allTextButtonsLength = 0;
+            foreach (Control c in panel2.Controls)
+            {
+                if (c is Button)
+                {
+                    allTextButtonsLength += c.Text.Length;
+                }
+            }
+            return allTextButtonsLength;
         }
 
         public void WinEffect(Button b1, Button b2, Button b3)
@@ -122,8 +148,23 @@ namespace TicTacAssignment
         }
 
 
-        }
+        private void buttonNewGame_Click(object sender, EventArgs e)
+        {
+            XorO = 0;
+            win = false;
+            label1.Text = "Play";
+            foreach (Control c in panel2.Controls)
+            {
+                if (c is Button)
+                {
+                    c.Text = "";
+                    c.BackColor = Color.White;
+                }
+            }
 
-       
+        }
     }
+}
+
+        
 
